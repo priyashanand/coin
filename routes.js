@@ -23,4 +23,6 @@ router.post('/api/stats', async (req, res) => {
     }
 });
 
+router.post('/api/deviation', statsController.getDeviation);
+
 module.exports = router;
