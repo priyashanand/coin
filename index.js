@@ -12,9 +12,9 @@ const port = process.env.PORT || 4000;
 app.use(express.json());
 
 cron.schedule('0 */2 * * *', fetchAndStoreStats);
+// cron.schedule('*/15 * * * *', fetchAndStoreStats);
 
 app.use('/', router)
-
 
 let status = '';
 
